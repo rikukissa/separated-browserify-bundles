@@ -1,7 +1,7 @@
 {
-  "name": "gulp-template",
+  "name": "Separate Browserify bundles",
   "version": "1.0.0",
-  "description": "Project template for gulp.js",
+  "description": "Bundling external libraries into a separate file",
   "author": "Riku Rouvila <riku.rouvila@leonidasoy.fi>",
   "license": "MIT",
   "main": "gulpfile.js",
@@ -10,28 +10,21 @@
     "start": "gulp",
     "build": "gulp build"
   },
-  "keywords": [
-    "gulp",
-    "template"
-  ],
+  "keywords": [],
   "dependencies": {
+    "lodash": "^3.1.0"
   },
   "devDependencies": {
     "bower": "~1.3.5",
+    "bower-resolve": "^2.2.1",
     "browserify": "~6.1.0",
     "deamdify": "^0.1.1",
     "debowerify": "~0.9.1",
-    "ecstatic": "~0.5.3",
+    "event-stream": "^3.2.2",
     "gulp": "~3.8.1",
-    "gulp-autoprefixer": "1.0.1",
-    "gulp-concat": "^2.4.3",
-    "gulp-livereload": "~2.1.0",
-    "gulp-minify-css": "~0.3.5",
-    "gulp-streamify": "0.0.5",
-    "gulp-uglify": "~1.0.1",
     "gulp-util": "~3.0.1",
-    "vinyl-source-stream": "~1.0.0",
-    "watchify": "~2.0.0"
+    "resolve": "^1.1.0",
+    "vinyl-source-stream": "~1.0.0"
   },
   "browserify": {
     "transform": [
